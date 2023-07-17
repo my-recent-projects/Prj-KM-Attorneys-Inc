@@ -1,0 +1,95 @@
+.home-first-col {
+    padding-left: 0px;
+}
+/* 
+    The first column of the firs row
+*/
+.home-intro-heading {
+    font-size: 50px;
+    font-family: sans-serif;
+    font-weight: bold;
+    color: green;     
+}
+
+.home-intro-sub-heading{
+    font-size: 27px;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: bold; 
+    color: black;
+    padding-bottom: 10px;
+}
+
+.home-intro-summary {
+    font-size: 17px;
+    padding: 15px;
+    background: black;
+    opacity: 0.6;
+    color: white; 
+    border-radius: 5px;
+}
+
+.home-intro-button-container {
+    padding-top: 15px;
+}
+
+.featured-container{
+    display: block;
+    text-align: center;
+    padding: 30px;
+    /* border: 1px solid lightgrey; */
+
+}
+
+.featured-items-container {
+    /* margin-left: 15px;
+    margin-right: 15px; */
+    margin-bottom: 20px;
+    margin-top: 20px;
+    }
+
+.featured-items-image img {
+    max-height: 200px;
+    border-bottom: 15px solid brown;
+    max-width: 100%;
+}
+
+.featured-items-headings{
+    font-size: 27px;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        font-weight: bold;
+        color: black;
+        margin-top: 18px;        
+}
+
+.featured-items-description {
+    padding-top: 15px;
+    min-height: 115px;
+    max-width: 100%;
+}
+
+.featured-items-button-container {
+    padding-top: 10px;
+}
+
+.featured-items-buttom {
+    font-size: 20px;
+    font-family: sans-serif;
+    font-weight: bold;
+    background-color: red;
+    border: none;
+    border-radius: 8px;
+    padding-left: 40px;
+    padding-right: 40px;
+    padding-top: 7px;
+    padding-bottom: 7px;
+    color: white;
+}
+
+.featured-items-buttom:hover {
+    color: white;
+    background-color: green;
+}
+
+
+
+
