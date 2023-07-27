@@ -1,6 +1,6 @@
 import { Component, OnInit, ViewChild } from '@angular/core';
 import { NgbCarouselConfig, NgbCarousel } from '@ng-bootstrap/ng-bootstrap';
-import { fadeInOutCarousel } from '../../aminations/aminations';
+import { fadeInOutCarousel } from '../../animations/animations';
 
 
 @Component({

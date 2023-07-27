@@ -1,12 +1,16 @@
 import { Component, OnInit } from '@angular/core';
 import { FormControl, FormGroup, Validators } from '@angular/forms';
+import { fadeInPageTitle } from 'src/app/app-shared/animations/animations';
 import { NotificationService } from 'src/app/app-shared/toastr-notifications/notifications';
 import { strValidator } from 'src/app/app-shared/validators/validators';
 
 @Component({
   selector: 'app-contact',
   templateUrl: './contact.component.html',
-  styleUrls: ['./contact.component.css']
+  styleUrls: ['./contact.component.css'],
+  animations: [
+    fadeInPageTitle
+  ]
 })
 export class ContactComponent implements OnInit  {
 

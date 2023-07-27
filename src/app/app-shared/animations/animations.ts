@@ -5,12 +5,18 @@ export let fadeInPageTitle: AnimationTriggerMetadata = trigger(
   'fadeInPageTitle', [
 
   //second para - state and transitions
-  transition(':enter', [
+    transition(':enter', [
+    state('in', style({ opacity: 1 })),
     group([
       //the first animation - to he applied on H4 within this HTML section
       query('h1', [
         style({ transform: 'translateY(-30px)' }),
         animate(800)
+      ]),
+
+      query('.page-title-description', [
+        style({ opacity: 0 }),
+        animate(4000)
       ]),
 
       //the second animation - to he applied on H4 within this HTML section

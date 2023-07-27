@@ -19,7 +19,30 @@
     margin-right: 15px; */
     margin-bottom: 20px;
     margin-top: 20px;
-    }
+}
+
+.featured-items-image{
+    position: relative; 
+}
+
+/* .featured-items-image:hover {
+    opacity: 0.4;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+} */
+
+/* not being used for now */
+.featured-items-image .image-onhover {
+    position: absolute;
+    left: 150px;
+    top: 50px;
+    display: none;
+    max-width: 100%;
+}
+
+/* not being used for now */
+.featured-items-image:hover .image-onhover{
+    display: block;
+}
 
 .featured-items-image img {
     max-height: 200px;
@@ -27,12 +50,32 @@
     max-width: 100%;
 }
 
+.featured-items-image img:hover {
+    opacity: 0.7;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+/* not being used for now */
+.image-onhover {
+    z-index: 100;
+    font-size: 50px;
+    display: none;
+    margin: 0 auto;
+    position: absolute;
+    color: black;
+}
+
+.featured-items-image:hover .image-onhover {
+    display: block;
+    color: black;
+}
+
 .featured-items-headings{
     font-size: 27px;
-        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-        font-weight: bold;
-        color: brown;
-        margin-top: 18px;        
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: bold;
+    color: brown;
+    margin-top: 18px;        
 }
 
 .featured-items-description {

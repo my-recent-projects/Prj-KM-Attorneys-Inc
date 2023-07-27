@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
 import { trigger, state, style, animate, transition, AnimationTriggerMetadata } from '@angular/animations';
-import { fadeInPageTitle, fadeInFeaturedImaged, fadeInOutCarousel } from 'src/app/app-shared/aminations/aminations';
+import { fadeInPageTitle, fadeInFeaturedImaged, fadeInOutCarousel } from 'src/app/app-shared/animations/animations';
 
 
 @Component({
