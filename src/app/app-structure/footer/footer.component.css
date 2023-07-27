@@ -2,7 +2,7 @@ footer {
     
     text-align: center;
     color: #f0f0f0;
-    margin-top: 25px;
+    /* margin-top: 10px; */
     border-top: 5px solid brown;
     word-wrap: break-word;
 }
@@ -40,4 +40,23 @@ footer {
 .footer-quick-links a{
     text-decoration: none;
     color: brown;
+}
+
+.float {
+    position: fixed;
+    width: 60px;
+    height: 60px;
+    bottom: 40px;
+    right: 40px;
+    background-color: #25d366;
+    color: #FFF;
+    border-radius: 50px;
+    text-align: center;
+    font-size: 30px;
+    box-shadow: 2px 2px 11px #999;
+    z-index: 100;
+}
+
+.my-float {
+    margin-top: 16px;
 }

@@ -18,7 +18,7 @@
               "file-saver",
               "lodash"
             ],
-            "outputPath": "dist/Monakali",
+            "outputPath": "dist/myApp/browser",
             "index": "src/index.html",
             "main": "src/main.ts",
             "polyfills": [
@@ -114,6 +114,61 @@
              
             ]
           }
+        },
+        "server": {
+          "builder": "@angular-devkit/build-angular:server",
+          "options": {
+            "outputPath": "dist/myApp/server",
+            "main": "server.ts",
+            "tsConfig": "tsconfig.server.json"
+          },
+          "configurations": {
+            "production": {
+              "outputHashing": "media",
+              "optimization": true
+            },
+            "development": {
+              "buildOptimizer": false,
+              "optimization": false,
+              "sourceMap": true,
+              "extractLicenses": false,
+              "vendorChunk": true
+            }
+          },
+          "defaultConfiguration": "production"
+        },
+        "serve-ssr": {
+          "builder": "@nguniversal/builders:ssr-dev-server",
+          "configurations": {
+            "development": {
+              "browserTarget": "myApp:build:development",
+              "serverTarget": "myApp:server:development"
+            },
+            "production": {
+              "browserTarget": "myApp:build:production",
+              "serverTarget": "myApp:server:production"
+            }
+          },
+          "defaultConfiguration": "development"
+        },
+        "prerender": {
+          "builder": "@nguniversal/builders:prerender",
+          "options": {
+            "routes": [
+              "/"
+            ]
+          },
+          "configurations": {
+            "production": {
+              "browserTarget": "myApp:build:production",
+              "serverTarget": "myApp:server:production"
+            },
+            "development": {
+              "browserTarget": "myApp:build:development",
+              "serverTarget": "myApp:server:development"
+            }
+          },
+          "defaultConfiguration": "production"
         }
       }
     }

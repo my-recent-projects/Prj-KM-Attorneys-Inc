@@ -4,7 +4,10 @@ import { NgModule } from '@angular/core';
 import { ReactiveFormsModule } from '@angular/forms';
 import { BrowserModule } from '@angular/platform-browser';
 
-//for toasts notifications
+//for Angular Universal (SEO)
+import { provideClientHydration } from '@angular/platform-browser';
+
+//for toasts notifications and aminations
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { ToastrModule } from 'ngx-toastr';
 
@@ -48,6 +51,7 @@ import { NgxLightboxComponent } from './app-shared/image-viewer/ngx-lightbox/ngx
 import { SharethisAngularModule } from 'sharethis-angular';
 import { ShareThisButtonsComponent } from './app-shared/social-media-buttons/share-this-buttons/share-this-buttons.component';
 import { OurTeamComponent } from './app-basic-views/our-team/our-team.component';
+import { StarRatingComponent } from './app-shared/star-rating/star-rating.component';
 
 
 @NgModule({
@@ -70,6 +74,7 @@ import { OurTeamComponent } from './app-basic-views/our-team/our-team.component'
     NgxLightboxComponent,
     ShareThisButtonsComponent,
     OurTeamComponent,
+    StarRatingComponent,
 
   ],
   imports: [
@@ -106,7 +111,8 @@ import { OurTeamComponent } from './app-basic-views/our-team/our-team.component'
     AppRoutingModule,
   ],
   providers: [
-    NgbCarouselConfig
+    NgbCarouselConfig, 
+    provideClientHydration()
   ],
   bootstrap: [AppComponent]
 })

@@ -1,5 +1,33 @@
 @import '~font-awesome/css/font-awesome.css';
 
+/* 
+--------------------------------
+ Sets the content size 
+--------------------------------
+ */
+body {
+    padding: 0px auto;
+    background-image: url("/assets/img/11.jpg");
+    /* background-size: 100%; */
+    background-repeat: repeat;
+    background-color: white;
+}
+
+/*
+-----------------------------------------------------
+ Sets padding to keep content from hitting the edges 
+-----------------------------------------------------
+*/
+
+.body-content {
+    background-color: white;
+    padding-bottom: 20px;
+    padding: 0px auto;
+    box-shadow: 0 0 100px 0 rgba(0, 0, 0, 100),
+                0 0 100px 0 rgba(0, 0, 0, 100);
+    /* box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.1), 10px 10px 300px rgba(0, 0, 0, 300); */
+    /* box-shadow: 0 4px 8px 0   rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19); */
+}
 
 .welcome-messsage {
     text-align: center;
@@ -10,6 +38,7 @@
     font-size: large;
     border-top: 30px solid brown;
 }
+
 .welcome-messsage>h1 {
     margin-bottom: 15px;
 }
@@ -26,48 +55,11 @@
     margin-top: 20px;
 }
 
-/* Sets the content size */
-body {
-    padding-top: 0px;
-    padding-bottom: 20px;
-    background-image: url("/assets/img/11.jpg");
-    /* background-size: 100%; */
-    background-repeat: repeat;
-    background-color: white;
-
-    
-}
-
-/* Sets padding to keep content from hitting the edges */ 
-.body-content {
-    background-color: white;
-    padding-bottom: 10px;
-    padding-top: 0px;
-    box-shadow: 0 0 100px 0
-              rgba(0, 0, 0, 100), 
-                0 0 100px 0 
-              rgba(0, 0, 0, 100);
-
-    /* box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.1), 10px 10px 300px rgba(0, 0, 0, 300); */
- /* box-shadow: 0 4px 8px 0   rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19); */
-}
-
-
-/* Override the default bootstrap behavior where horizontal description lists 
-   will truncate terms that are too long to fit in the left column 
+/* 
+-------------------------------------------------
+ Styling the behaviour of form-control validation
+-------------------------------------------------
 */
-.dl-horizontal dt {
-    white-space: normal;
-}
-
-.pt-5 {
-    color: black;
-}
-
-/*
-    Styling the behaviour of form-control validation
-*/
-
 .view-content-wrapper {
     background-color: white;
     border-radius: 6px;
@@ -78,10 +70,9 @@ body {
     padding: 20px;
     padding-bottom: 10px;
     margin-bottom: 10px;
+    color: brown;
     
 }
-
-
 .form-control {
     margin-top: 7px;
     margin-bottom: 7px;
@@ -93,45 +84,8 @@ body {
     border-left: 6px solid #42A948;
 }
 
-
 .form-control:focus {
     border: 1px solid blue;   
-}
-
-
-.update-form {
-    background-color: white;
-    padding: 18px;
-    margin-bottom: 10px;
-    border: none;
-}
-
-.update-form-label {
-    font-weight: bolder;
-    color: brown;
-}
-
-.form-segments {
-    border: 1px solid lightgrey;
-    padding: 10px;
-    padding-bottom: 10px;
-    margin-bottom: 20px;
-    margin-top: 5px;
-    background-color: #FEEE;
-}
-.form-segments-heading {
-    padding: 0px;
-    margin-bottom: 20px;
-}
-
-.form-control-sm {
-    margin-bottom: 5px;
-    background-color: white;
-}
-
-.form-heading {
-    margin-bottom: 8px;
-    font-weight: bold;  
 }
 
 .form-validation-message {
@@ -140,111 +94,16 @@ body {
     
 }
 
-.tutorial-title {
-    background-color: red;
-    color: white;
-    padding: 25px;
-    border-radius: 8px;
-    margin-bottom: 10px;
-}
-
-.btn-aligh-position {
-    margin-top: 5px;
-    margin-bottom: 5px;
-}
-
-.submit-button {
-    margin-top: 10px;
-}
-
-.banner-container {
-    padding-bottom: 10px;
-}
-
-.page-heading {
-    margin-bottom: 14px;
-    font-size: 20px;
-    font-weight: bold;
-    font-family: Arial, Helvetica, sans-serif;  
-    /* border-radius: 6px; */
-    background-color: #FEEE;
-    padding: 14px;
-    padding-left: 20px;
-    
-}
-
-.page-content-summary {
-    border-left: 30px solid red;
-    padding-left: 20px;
-    padding-right: 20px;
-    padding-bottom: 2px;
-    padding-top: 10px;
-    margin-bottom: 10px;
-    border-radius: 8px;
-}
-
-.page-summary-heading {
-    font-size: larger;
-    font-weight: bolder;
-}
-
-
-.techs-image-container {
-    border: 0px solid lightgrey;
-    text-align: center;
-    margin-bottom: 10px;
-    align-items: center;
-    padding-top: 15px;
-    padding-bottom: 15px;
-    background-color: #FEEE;
-}
-
-.tech-image {
-    height: 80px;
-}
-
-.formSwitch {
-    margin-bottom: 15px;
-    font-weight: bold;
-    color: tan;
-}
-
 .nav-tabs .nav-link {
     font-weight: bold;
     color: brown;
 }
 
-.content-hint {
-    background-color: #FEEE;
-}
-
-::placeholder {
-    color: white;
-}
-
-.details-headings {
-    padding: 9px;
-    background-color: #FDDD;
-    color: brown;
-}
-
-.details-container {
-    margin-bottom: 18px;
-    padding-left: 12px;
-}
-
-
-.align-element-right {
-    text-align: right;
-}
-
-.item-align-right {
-    float: right;
-}
-
-.icons-format {
-    font-size: 2rem;
-}
+/* 
+---------------------------------------
+ Side-bar 
+---------------------------------------
+*/
 
 .sidebar-heading-subheading {
     padding-left: 15px;
@@ -270,9 +129,9 @@ body {
 }
 
 /*
- -----------------------------------------------------------
+---------------------------------------
  From http-data component
- -----------------------------------------------------------
+---------------------------------------
 */
 
 .list-group {
@@ -301,37 +160,11 @@ a {
     border-left: 1px solid red;
 }
 
-/* --------------- 
- For Demo 
---------------- */
-
-.demo-name {
-    margin-bottom: 5px;
-    font-size: 18px;
-    font-weight: bold;
-    color: black;
-    text-align: right;
-    background-color: #FEEE;
-    padding-top: 5px;
-    padding-bottom: 5px;
-    padding-right: 18px;
-    border-radius: 6px;
-    vertical-align: middle;
-    
-}
-
-.demo-concepts-covered {
-    padding-top: 5px;
-    padding-bottom: 5px;
-    font-weight: bold;
-
-}
-
 /* 
---------------------------------
-For toast
---------------------------------
- */
+---------------------------------------
+ For toast 
+---------------------------------------
+*/
 
  .toast-top-center {
      top: 12px;
@@ -346,11 +179,22 @@ For toast
      margin-right: 5px;
  }
 
-/* --------------------------------
-For Carousel
---------------------------------*/
+/* 
+---------------------------------------
+ For accordion
+---------------------------------------
+*/
 
 .accordion-button:not(.collapsed){
     color: #000;
     font-weight: bold;
+}
+
+.accordion-header button {
+    color: brown;
+    font-weight: bold;
+}
+
+.accordion-body {
+   margin-left: 24px;
 }

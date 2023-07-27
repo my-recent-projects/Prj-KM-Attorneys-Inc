@@ -7,6 +7,7 @@ import { ServicesComponent } from './app-basic-views/services/services.component
 import { ErrorComponent } from './app-basic-views/error/error.component';
 import { DeactivateRoute } from './app-shared/routes-guard/deactivate-route';
 import { OurTeamComponent } from './app-basic-views/our-team/our-team.component';
+import { FaqComponent } from './app-basic-views/faq/faq.component';
 
 
 const routes: Routes = [
@@ -20,6 +21,7 @@ const routes: Routes = [
   { path: 'about', component: AboutComponent, title: "K.M. Attorneys Inc - About Us" },
   { path: 'our team', component: OurTeamComponent, title: "K.M. Attorneys Inc - Our Team" },
   { path: 'services', component: ServicesComponent, title: "K.M. Attorneys Inc - Our Services" },
+  { path: 'faq', component: FaqComponent, title: "K.M. Attorneys Inc - FAQs" },
   { path: 'contact', component: ContactComponent, canDeactivate: [DeactivateRoute], title: "K.M. Attorneys Inc - Contact Us" },
   
   // redirectTo - Error page
@@ -27,7 +29,9 @@ const routes: Routes = [
 ];
 
 @NgModule({
-  imports: [RouterModule.forRoot(routes)],
+  imports: [RouterModule.forRoot(routes, {
+    initialNavigation: 'enabledBlocking'
+})],
   exports: [RouterModule]
 })
 export class AppRoutingModule { }

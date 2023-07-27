@@ -1,11 +1,13 @@
 import { Component, OnInit, ViewChild } from '@angular/core';
 import { NgbCarouselConfig, NgbCarousel } from '@ng-bootstrap/ng-bootstrap';
+import { fadeInOutCarousel } from '../../aminations/aminations';
 
 
 @Component({
   selector: 'app-ng-bootstrap-carousel',
   templateUrl: './ng-bootstrap-carousel.component.html',
   styleUrls: ['./ng-bootstrap-carousel.component.css'],
+  animations: [fadeInOutCarousel],
   providers: [NgbCarouselConfig]
 })
 export class NgBootstrapCarouselComponent {

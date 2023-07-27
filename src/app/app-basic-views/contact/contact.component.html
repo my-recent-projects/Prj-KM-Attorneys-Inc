@@ -44,7 +44,6 @@
                     <!-- #firstName allows angular to binda the form-control to ngModel -->
                     <input type="text" formControlName="emailAddress" id="emailAddress"  pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$"
                         class="form-control form-control-sm" placeholder="Email address">
-
                     <!--Multiple Validation Error messages -->
                     <div *ngIf="emailAddress?.touched && emailAddress?.invalid" class="form-validation-message">
                         <div *ngIf="emailAddress?.errors?.['required']">* Email address required </div>
@@ -73,7 +72,7 @@
 
                 <div class="form-group contact-form-btn-container">
                     <!-- keeps the button inactive untill when the for is valid -->
-                    <input type="reset" value="Clear" class="btn btn-sm contact-form-btn">
+                    <input type="reset" value="Clear" class="btn btn-sm contact-form-btn reset">
                     <input type="submit" value="Submit" [disabled]="!contactForm.valid"
                         class="btn btn-sm contact-form-btn submit">
                     
