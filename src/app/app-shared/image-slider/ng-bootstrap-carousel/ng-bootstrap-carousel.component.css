@@ -1,6 +1,6 @@
-/* .picsum-img-wrapper {
-    max-height: 320px;
-} */
+.picsum-img-wrapper {
+    border-top: 10px solid red;
+}
 .carousel-caption {
     max-width: 100%;
 }
@@ -21,17 +21,19 @@ margin-bottom: 10px;
     margin-top: 5px;
 }
 .carousel-button-container>.btn {
-    border: 1px solid lightgrey;
+    /* border: 1px solid lightgrey; */
+    border: none;
     max-width: 60%;
     margin: 5px;
- 
+    background-color: red;
     padding-left: 50px;
     padding-right: 50px;
     color: white;
 }
+
 .carousel-button-container .btn:hover {
-    background-color: goldenrod;
+    background-color:goldenrod;
     color: white;
-    border: 1px solid goldenrod;
+    border:none;
 } 
 

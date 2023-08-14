@@ -20,10 +20,10 @@ export let fadeInPageTitle: AnimationTriggerMetadata = trigger(
       ]),
 
       //the second animation - to he applied on H4 within this HTML section
-      query('.social-buttons-aligner', [
-        style({ transform: 'translateY(30px)' }),
-        animate(800)
-      ]),
+      // query('.social-buttons-aligner', [
+      //   style({ transform: 'translateY(30px)' }),
+      //   animate(800)
+      // ]),
     ])
   ])
 ])
@@ -40,7 +40,7 @@ export let fadeInFeaturedImaged: AnimationTriggerMetadata = trigger(
       group([
         //first animation - applied on .left-img class
         query('.left-img', [
-          style({ transform: 'translateX(-50px)', opacity: 0 }),
+          style({ transform: 'translateX(-80px)', opacity: 0 }),
           animate(800)
         ]),
 
@@ -52,13 +52,13 @@ export let fadeInFeaturedImaged: AnimationTriggerMetadata = trigger(
 
         //third animation - applied on .right-img class
         query('.right-img', [
-          style({ transform: 'translateX(50px)', opacity: 0 }),
+          style({ transform: 'translateX(80px)', opacity: 0 }),
           animate(800)
         ]),
 
         query('.featured-items-headings', [
           style({ opacity: 0 }),
-          animate(2000)
+          animate(1000)
         ])
 
       ])

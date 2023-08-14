@@ -2,9 +2,8 @@ footer {
     
     text-align: center;
     color: #f0f0f0;
-    /* margin-top: 10px; */
-    border-top: 5px solid brown;
     word-wrap: break-word;
+    border-top: 5px solid grey;
 }
 
 .footer-items-container {
@@ -35,13 +34,17 @@ footer {
 .copyright-items-container {
     margin: 0px;
     padding: 30px;
+    color: white;
+    background-color: darkgray;
+    
 }
 
 .footer-quick-links a{
     text-decoration: none;
-    color: brown;
+    color: black;
 }
 
+/* Whatsapp floating button */
 .float {
     position: fixed;
     width: 60px;

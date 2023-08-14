@@ -8,8 +8,9 @@
 
 .company-name {
     font-family: Verdana, Geneva, Tahoma, sans-serif;
-    font: 2em sans-serif;
+    font: 2.1em sans-serif;
     vertical-align: middle;
+    color: darkcyan;
 }
 
 .logo img {
@@ -18,8 +19,8 @@
 }
 
 .moto {
-    color: darkgray;
-    font: 1.4em sans-serif;
+    color: brown;
+    font: 1.2em sans-serif;
 }
 
 

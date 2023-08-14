@@ -59,16 +59,18 @@ const stickyShareButtonsConfig: StickyShareButtonsConfig = {
   image: '../assets/banners/6.jpg',  // (defaults to og:image or twitter:image)
   description: 'Goog day, I would lie to share the Law-firm website to you. Thank you.',       // (defaults to og:description or twitter:description)
   title: 'KM. Attorneys Inc - Website',            // (defaults to og:title or twitter:title)
-  message: 'Goog day, I would lie to share the Law-firm website to you. Thank you.',     // (only for email sharing)
+  message: 'Goog day, I would lie to share our Law-firm website to you. Thank you.',     // (only for email sharing)
   subject: 'KM. Attorneys Inc - Website',  // (only for email sharing)
   username: 'custom twitter handle' // (only for twitter sharing)
 };
+
 
 @Component({
   selector: 'app-share-this-buttons',
   templateUrl: './share-this-buttons.component.html',
   styleUrls: ['./share-this-buttons.component.css']
 })
+  
 export class ShareThisButtonsComponent {
   inlineShareButtonsConfig = inlineShareButtonsConfig;
   stickButton = stickyShareButtonsConfig;
